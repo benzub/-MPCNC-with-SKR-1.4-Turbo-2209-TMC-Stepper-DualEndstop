@@ -104,7 +104,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 3
+#define SERIAL_PORT 0 // 3 benzub
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
@@ -121,7 +121,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200 // benzub 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -1092,8 +1092,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 500
-#define Y_BED_SIZE 500
+#define X_BED_SIZE 560 // benzub
+#define Y_BED_SIZE 560 // benzub
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1767,7 +1767,7 @@
 //
 // Note: Usually sold with a white PCB.
 //
-#define REPRAP_DISCOUNT_SMART_CONTROLLER
+// #define REPRAP_DISCOUNT_SMART_CONTROLLER  // benzub disabled
 
 //
 // Original RADDS LCD Display+Encoder+SDCardReader
@@ -1907,7 +1907,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER //benzub enabled
 
 //
 // ReprapWorld Graphical LCD
